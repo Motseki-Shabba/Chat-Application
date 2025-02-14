@@ -14,7 +14,7 @@ function signUp() {
 
   if (
     signUpUsers_Records.some((n) => {
-      return n.firstname === firstname;
+
     })
   ) {
     alert("User exists");
