@@ -6,6 +6,7 @@ function signUp() {
   email = document.getElementById("email").value;
   password = document.getElementById("password").value;
 
+  console.log(firstname + lastname + email + password);
   let signUpUsers_Records = new Array();
 
   signUpUsers_Records = JSON.parse(localStorage.getItem("users"))
@@ -14,7 +15,7 @@ function signUp() {
 
   if (
     signUpUsers_Records.some((n) => {
-      return n.email === email;
+      return n.firstname === firstname;
     })
   ) {
     alert("User exists");
