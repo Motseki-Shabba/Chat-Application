@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="../styles/signup-page-style.css" />
+
+    <script src="../javascript/log-in.js"></script>
   </head>
   <body>
     <div class="container">
@@ -15,10 +17,10 @@
         <h2>Log In</h2>
 
         <form>
-          <label for="user-name">User name</label>
+          <label for="firstname">User name</label>
           <input
             type="text"
-            id="user-name"
+            id="firstname"
             placeholder="Enter your user name"
           />
 
@@ -29,7 +31,7 @@
             placeholder="Enter your password"
           />
 
-          <button type="submit">Log in</button>
+          <button type="button" onclick="logIn()">Log in</button>
         </form>
         <p>Don't have an account? <a href="../index.html">sign up</a></p>
       </div>
