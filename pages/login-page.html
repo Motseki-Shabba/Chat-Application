@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="../styles/signup-page-style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="../javascript/log-in.js"></script>
   </head>
+
   <body>
     <div class="container">
       <div class="left">
         <img src="../assets/images/pic.jpg" alt="Logo" />
       </div>
       <div class="right">
-        <h2>Log In</h2>
-
+        <h2>Sign in with</h2>
         <form>
           <label for="firstname">User name</label>
           <input
@@ -23,15 +26,13 @@
             id="firstname"
             placeholder="Enter your user name"
           />
-
           <label for="password">Password</label>
           <input
             type="password"
             id="password"
             placeholder="Enter your password"
           />
-
-          <button type="button" onclick="logIn()">Log in</button>
+          <button type="submit" onclick="logIn(event)">Log in</button>
         </form>
         <p>Don't have an account? <a href="../index.html">sign up</a></p>
       </div>
