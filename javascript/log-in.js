@@ -1,6 +1,8 @@
 function logIn(event) {
   event.preventDefault();
-  let firstname, password; //Getting user input values
+  let firstname, password;
+
+  //Getting user input values
 
   firstname = document.getElementById("firstname").value;
   password = document.getElementById("password").value; //Restoring stored users from the LocalStorage or return empty array

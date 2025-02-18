@@ -20,6 +20,8 @@ function signUp() {
   ) {
     alert("User exists");
   } else {
+    alert("Successfully registered");
+
     signUpUsers_Records.push({
       firstname: firstname,
       lastname: lastname,
@@ -28,5 +30,6 @@ function signUp() {
     });
 
     localStorage.setItem("users", JSON.stringify(signUpUsers_Records));
+    // window.location.assign("login-page.html");
   }
 }
