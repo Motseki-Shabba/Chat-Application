@@ -19,20 +19,25 @@
       </div>
       <div class="right">
         <h2>Sign in with</h2>
-        <form>
+        <form id="loginForm">
           <label for="firstname">User name</label>
           <input
             type="text"
             id="firstname"
             placeholder="Enter your user name"
+            required
           />
           <label for="password">Password</label>
           <input
             type="password"
             id="password"
             placeholder="Enter your password"
+            required
           />
           <button type="submit" onclick="logIn(event)">Log in</button>
+          <p id="error-message" style="color: red; display: none">
+            Please fill in both fields correctly.
+          </p>
         </form>
         <p>Don't have an account? <a href="../index.html">sign up</a></p>
       </div>

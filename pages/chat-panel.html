@@ -1,85 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-       
     <meta charset="UTF-8" />
-       
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
     <title>Chat Application</title>
-       
     <link rel="stylesheet" href="../styles/chatstyles.css" />
-       
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-
   <body>
-       
     <div class="container">
-                   
       <div class="sidebar">
-                   
         <h3>Active Chats</h3>
-
-                               
         <div class="profile">
-                         
           <button class="profile-btn">
-                               
-            <i class="fa fa-user" style="font-size: 24px"></i>                  
-              <span id="logged-in-user">Loading...</span> ▼                
+            <i class="fa fa-user" style="font-size: 24px"></i>
+            <span id="logged-in-user">Loading...</span> ▼
           </button>
-                         
           <div class="dropdown-content">
-                                <a href="profile.html">View Profile</a>        
-                        <a href="#" id="logout">Logout</a>                
+            <a href="profile.html">View Profile</a>
+            <a href="./login-page.html" id="logout">Logout</a>
           </div>
-                     
         </div>
-
-                   
-        <ul id="user-list">
-                                     
-        </ul>
-               
+        <ul id="user-list"></ul>
       </div>
-
-                   
       <div class="chat-area">
-                   
         <h3 id="chat-title">Group Chat</h3>
-
-                               
         <select id="user-select">
-                         
           <option value="group">Group Chat</option>
-                     
         </select>
-
-                   
         <div id="chat-box" class="messages"></div>
-
-                   
         <div class="input-area">
-                         
           <input
             type="text"
             id="message-input"
             placeholder="Type something..."
           />
-                         
-          <button id="send-button" onclick="sendMessage()">➤</button>          
-           
+          <button id="send-button" onclick="sendMessage()">➤</button>
         </div>
-               
       </div>
-         
     </div>
-
-       
-    <script src="../javascript/chat.js"></script>
+    <script src="./send.js"></script>
   </body>
+
+  <script src="../javascript/chat.js"></script>
 </html>
