@@ -35,3 +35,14 @@ ________________________________________________________________________________
 - Validate non-existing users upon login. 
 - Ensure usernames are unique. 
 
+**Design**
+https://www.figma.com/design/0u3q8EV5ZWqVha0KozNv7Q/Untitled?node-id=0-1&t=r4JwSMAAiwuuvUkw-1
+
+**Link to access the application**
+
+https://motseki-shabba.github.io/Chat-Application/
+
+
+
+
+
