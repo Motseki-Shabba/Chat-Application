@@ -10,36 +10,47 @@
     />
     <script src="../Chat-Application/javascript/sign-up.js"></script>
   </head>
+
   <body>
     <div class="container">
       <div class="left">
         <img src="../Chat-Application/assets/images/pic.jpg" alt="Logo" />
       </div>
-
       <div class="right">
         <h2>Create an Account</h2>
-        <form>
+        <form id="sign-up-form">
           <label for="firstname">First Name</label>
+
           <input
             type="text"
             id="firstname"
             placeholder="Enter your first name"
+            required
           />
 
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" placeholder="Enter your last name" />
-
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Enter your last name"
+            required
+          />
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" />
-
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
           <label for="password">Password</label>
           <input
             type="password"
             id="password"
             placeholder="Enter your password"
+            required
           />
-
-          <button type="button" onclick="signUp()">Sign Up</button>
+          <button type="button" onclick="signUp(event)">Sign Up</button>
+          <p id="error-message" style="color: red; display: none"></p>
         </form>
         <p>
           Already have an account?
